@@ -1900,11 +1900,12 @@ margin-left: 2px;
    display: inline-flex;
    color: #677842;
    padding: 15px 25px;
-   font-size: 20px;
+   font-size: 18px;
    font-weight: 700;
    border-radius: 15px;
    border: 1px solid white;
    cursor: pointer;
+   box-shadow: 0 0 7px 3px rgba(129, 129, 129, 0.66);
    transition: all 0.3s ease 0s;
 }
 
