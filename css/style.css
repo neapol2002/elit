@@ -1361,7 +1361,7 @@ f
    border-top: 2px dashed #677842;
    border-bottom: 2px dashed #677842;
    display: flex;
-   margin-bottom: 15px;
+   margin-bottom: 10px;
    justify-content: space-between;
    align-items: center;
 }
@@ -1439,6 +1439,7 @@ f
     display: flex;
     flex-wrap: wrap;
 /*    justify-content: space-between;*/
+   margin-bottom: 20px;
 }
 
 .home__item {
@@ -1482,7 +1483,7 @@ f
    }
    
    .homes__ads__main__inner {
-      margin: 0px -5px;
+      margin: 0px -5px 20px;
    }
 }
 
@@ -1726,7 +1727,134 @@ margin-left: 2px;
     margin-bottom: 5px;
 }
 
+/* Agencies Styles  */
+.agencies {
+}
+.agencies_container {
+}
 
+.agencies__inner {
+   display: flex;
+   margin-bottom: 15px;
+}
+.agency__item {
+   flex: 0 0 50%;
+   overflow: hidden;
+}
+.agency__body {
+   display: flex;
+   margin: 10px;
+   border: 1px solid #d9d9d9;
+    border-radius: 10px;
+    box-shadow: 0 0 3px 2px rgba(201,199,199,0.66);
+   overflow: hidden;
+}
+
+.agency__body:hover {
+   box-shadow: 0 0 3px 2px rgba(101, 175, 0, 0.66);
+}
+
+.agency__left {
+   flex: 0 0 25%;
+   min-width: 120px;
+   position: relative;
+   border-right: 1px solid #d8d8d8;
+}
+.agency__logo {
+   width: 100%;
+   height: 100%;
+}
+
+.agency__logo img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.agency__elan_say {
+   position: absolute;
+   top: 0;
+   left: 0;
+   background-color: gold;
+   color: white;
+   padding: 3px 5px;
+   font-weight: 700;
+}
+
+.agency__elan_say span {
+   padding: 0px 2px;
+}
+.agency__right {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   overflow: hidden;
+/*   width: 100%;*/
+}
+.agency__about {
+   padding: 5px 10px;
+   text-decoration: none;
+}
+.agency__name {
+   font-size: 18px;
+   font-weight: 700;
+   margin-bottom: 5px;
+  color: black;
+    white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+   padding-right: 10px;
+   min-width: 0px;
+}
+.agency__text {
+   color: #414141;
+   overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+}
+.agency__stats {
+   display: flex;
+   justify-content: flex-end;
+   background-color: #9aba95;
+   padding: 4px 15px;
+   color: white;
+   font-weight: 500;
+   align-items: center;
+}
+
+
+
+.stat__item {
+   display: flex;
+   align-items: center;
+   margin: 0px 4px;
+}
+.icon_stat {
+   fill: currentcolor;
+   width: 12px;
+   height: 12px;
+   margin: 0px 1px;
+/*   margin-bottom: -2px;*/
+}
+.icon-vip_title {
+}
+.stat__number {
+}
+
+@media (max-width: 700px) {
+   .agencies__inner {
+   flex-wrap: wrap;
+}
+.agency__item {
+   flex: 0 0 100%;
+}
+}
+
+@media (max-width: 500px) {
+   .agency__body {
+      margin: 10px 5px;
+   }
+}
 
 /*  Footer Styles */
 
